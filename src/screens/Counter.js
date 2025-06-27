@@ -1,15 +1,19 @@
 import { StyleSheet, Text, View, Button } from "react-native";
 import React, { useState } from "react";
 
+const minimumCountLimit = 0;
+const change = 1;
+
 export default function Counter() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(minimumCountLimit);
   const onAddPress = () => {
-    setCount(count + 1);
+    setCount(count + change);
   };
   const onSubtractPress = () => {
-    if (count >= 1) {
-      setCount(count - 1);
+    if (count - change < minimumCountLimit) {
+      return;
     }
+    setCount(count - 1);
   };
   return (
     <View style={styles.container}>
