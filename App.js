@@ -1,8 +1,10 @@
 import Exercise1 from "./src/screens/Exercise1";
-import InputFields from "./src/screens/InputFields";
+import Login from "./src/screens/Login";
+import StatePractice from "./src/screens/StatePractice";
 export default function App() {
   return (
     // <Exercise1 />
-    <InputFields />
+    // <Login />
+    <StatePractice />
   );
 }

@@ -7,7 +7,7 @@ import {
   ImageBackground,
 } from "react-native";
 
-export default function InputFields() {
+export default function Login() {
   return (
     <ImageBackground
       style={styles.container}
