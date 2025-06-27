@@ -32,6 +32,11 @@ const styles = new StyleSheet.create({
     justifyContent: "center",
     gap: 20,
     paddingHorizontal: 20,
+    //----------Different Formats for adding colors
+    // backgroundColor: "red",
+    // backgroundColor: "#ff0000",
+    // backgroundColor: "rgb(255,0,0)",
+    // backgroundColor: "rgba(255,0,0,0.5)",
   },
   input: {
     borderWidth: 2,
