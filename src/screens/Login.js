@@ -1,3 +1,4 @@
+import { useNavigation } from "@react-navigation/native";
 import {
   View,
   StyleSheet,
@@ -8,6 +9,10 @@ import {
 } from "react-native";
 
 export default function Login() {
+  const { navigate } = useNavigation();
+  const onLoginPress = () => {
+    navigate("WhatsappStatus");
+  };
   return (
     <ImageBackground
       style={styles.container}
@@ -28,7 +33,7 @@ export default function Login() {
         placeholderTextColor={"white"}
       />
       <View style={styles.button}>
-        <Button title="Login" />
+        <Button title="Login" onPress={onLoginPress} />
       </View>
     </ImageBackground>
   );
