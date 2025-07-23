@@ -10,6 +10,7 @@ import React from "react";
 import Entypo from "@expo/vector-icons/Entypo";
 import Fontisto from "@expo/vector-icons/Fontisto";
 import { styles } from "./Styles";
+import ConfettiButton from "../../components/ConfettiButton";
 
 export default function WhatsappStatus() {
   const numericData = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -62,6 +63,7 @@ export default function WhatsappStatus() {
           <Text style={styles.exploreText}>Explore</Text>
         </View>
       </View>
+      <ConfettiButton />
     </View>
   );
 }
